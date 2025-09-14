@@ -1,0 +1,291 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+:root {
+    --primary-color: #4891ff;
+}
+
+
+body {
+    font-family: 'Poppins';
+    font-size: 20px;
+    line-height: 1.5;
+    background: #fff9f7;
+    
+
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    
+
+    color: #555
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    transition: 0.5s;
+
+}
+
+a:hover {
+    color: var(--primary-color);
+}
+
+ul {
+    list-style: none;
+    
+
+}
+
+.bullet {
+    list-style-type: disc;
+    list-style-position: inside;
+    padding-left: 1em;
+}
+
+ol {
+    padding-top: 20px;
+    padding-left: 2em;
+
+}
+
+ol ::marker {
+    font-weight: 400;
+    color: #000000;
+}
+
+li {
+    margin-bottom: 0px;
+
+}
+
+/* imagens */
+
+img {
+    margin: auto auto;
+    display: block;
+    max-width: 100%;
+    
+}
+
+.sideimg-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* h's */
+h1 {
+    
+    color: #333;
+    
+}
+
+h2 {
+    margin-top: 1em;
+    color: #333; 
+}
+
+h3 {
+    margin-top: 0.8em;
+    padding-top: 0.8em;
+    color: #333;
+}
+
+h4 {
+    margin-top: 0.5em;
+    padding-top: 0.5em;
+    color: #333;
+}
+
+p {
+    
+    padding-top: 1.2em;
+    text-align: justify;
+}
+
+main {
+    max-width: 50em;
+    margin: 0px auto;
+    padding-bottom: 5vh;
+    
+    
+}
+
+/* Utility navbar */
+.top-nav-bar {
+    background: #3B060A; /* Cor do topo */
+    height: 140px;        /* Altura real da faixa */
+    width: 100%;
+    
+}
+.top-nav-bar img {
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    width: 7%; 
+    transform: translate(-50%, -50%);
+    
+}
+
+.bottom-nav-bar {
+    background: #e7d5d4; /* Cor do topo */
+    height: 10px;        /* Altura real da faixa */
+    width: 100%;
+    
+}
+
+.navbar {
+    position: static;
+    top: 0px;
+    left: 0;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    width: 100%;
+    height: 80px;
+    text-align: center; 
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFECCC;
+    height: 70px;
+    font-size: 26px;
+}
+
+.navbar .main-menu ul {
+    display: flex;
+    
+}
+
+.navbar ul li a {
+    padding: 0px 60px;
+    display: block;
+    font-weight: 600;
+    transition: 0.5s;
+    white-space: nowrap;
+    color: #3B060A;
+    
+}
+
+.navbar ul li a:hover {
+    color: var(--primary-color);
+}
+
+
+/* footer */
+.footer {
+    width: 100%; /* Full viewport width */
+    position: static;
+    padding-top: 1vh;
+    background-color: #FFECCC;
+
+}
+
+.footer h4 {
+    padding-bottom: 10px;
+    color: #fff;
+}
+
+footer ul li {
+    line-height: 1.1;
+}
+
+.footer a {
+    color: #ccc;
+}
+
+.footer i {
+    font-size: 2.5em;
+    padding-right: 40px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+}
+
+
+.footer-icons {
+    display: none;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+    padding: 4vh auto;
+}
+
+.footer-icons i {
+    font-size: 2rem;
+}
+
+
+/* hero */
+.core {
+    position: relative; /* needed for absolute positioning of button */
+     /* space for fixed navbar */
+}
+
+
+
+.core img {
+    margin-top: 8.7rem;
+    width: 100%;
+    height: 700px;
+    display: block;
+}
+
+.core header {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1rem 2rem;
+    font-size: 5.2rem;
+    color: #3B060A;
+    letter-spacing: 10px;
+}
+
+.core text {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1rem 2rem;
+    font-size: 3.2rem;
+    color: #3B060A;
+    letter-spacing: 10px;
+}
+
+.core button {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    background-color: #772222;
+    color: #FFECCC;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.core background {
+    margin-top: 2rem;
+    width: 100%;
+    height: 700px;
+    display: block;
+    background-color: #FFECCC;
+}
